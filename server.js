@@ -47,7 +47,6 @@ app.post('/add-book', (req, res) => {
 app.listen(3000, () => { console.log('Server started at port 3000')} ); //Prompts the user that the server is already started.
 
 
-/*
   app.get('find-by-author', (req,res) => {
     readFile('book.txt', 'utf8', (err,data) => {
       if(err) throw err;
@@ -56,7 +55,7 @@ app.listen(3000, () => { console.log('Server started at port 3000')} ); //Prompt
       var result = [];
 
       lines.forEach(line => {
-        var line_element = line.split(', );
+        var line_element = line.split(', ');
 
         if(line_element.indexOf(req.query.author) == 2){
           console.log("Found it: " + line);
@@ -69,5 +68,4 @@ app.listen(3000, () => { console.log('Server started at port 3000')} ); //Prompt
 
     })
 
-  }
-*/
+  })
